@@ -1,3 +1,4 @@
+//Gabriela Grippo , ejercicio 10.
 /*
 Debemos lograr tomar el importe por ID.
 Transformarlo a entero (parseInt), luego
@@ -6,13 +7,17 @@ en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
 	let sueldo;
-	let aumento;
+	let descuento;
 	let resultado;
 
-	sueldo=parseFloat(document.getElementById("txtIdImporte").value);
+	sueldo=document.getElementById("txtIdImporte").value;
 	
-	aumento=sueldo * 25/100 ;
-	resultado = sueldo - aumento;
+	sueldo=parseInt(sueldo);
+	
+	//descuento=sueldo * 25/100 ;
+	resultado=sueldo *0.75;
+	
+	//resultado = sueldo - descuento;
 
 	document.getElementById("txtIdResultado").value = resultado;
 }

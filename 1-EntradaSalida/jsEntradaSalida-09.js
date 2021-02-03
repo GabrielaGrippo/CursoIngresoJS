@@ -9,9 +9,13 @@ function mostrarAumento()
 	let aumento;
 	let resultado;
 
-	sueldo=parseFloat(document.getElementById("txtIdSueldo").value);
+	sueldo=document.getElementById("txtIdSueldo").value;
+	sueldo=parseInt(sueldo);
 	
-	aumento=sueldo * 10/100 ;
+	//aumento=sueldo * 10/100 ;
+	aumento=sueldo * 0.1;
+	//resultado=sueldo + (sueldo *0.1);
+	//resultado=sueldo * 1.1;
 	resultado = sueldo + aumento;
 
 	document.getElementById("txtIdResultado").value = resultado;
