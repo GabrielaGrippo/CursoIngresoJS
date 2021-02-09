@@ -25,11 +25,12 @@ function Circulo ()
     let perimetro;
     let radio;
     let alambre;
-    const PI = 3.14;
+   // const PI = 3.14;
+   
 
    radio=parseInt(document.getElementById("txtIdRadio").value);
 
-   perimetro = 2* PI * radio;
+   perimetro = 2* Math.PI * radio;
    alambre=perimetro *3;
    alert("el alambre que se necesita es : "+ alambre+" metros");
 	

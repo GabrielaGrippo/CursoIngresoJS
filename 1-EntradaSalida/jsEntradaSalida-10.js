@@ -6,18 +6,21 @@ mostrar el importe con un Descuento del 25 %
 en el cuadro de texto "RESULTADO"*/
 function mostrarAumento()
 {
-	let sueldo;
+	let importe;
 	let descuento;
 	let resultado;
 
-	sueldo=document.getElementById("txtIdImporte").value;
+	importe=document.getElementById("txtIdImporte").value;
 	
-	sueldo=parseInt(sueldo);
+	importe=parseInt(importe);
 	
-	//descuento=sueldo * 25/100 ;
-	resultado=sueldo *0.75;
+	//1) descuento=importe * 25/100 ;
+	/*2) descuento=importe *0.25;
 	
-	//resultado = sueldo - descuento;
-
+	resultado = importe - descuento;*/
+	 
+	/* 4) resultado= importe * 0.75; a la parte enterta le 
+	 resto el procentaje 100-25=75.
+	 */ 
 	document.getElementById("txtIdResultado").value = resultado;
 }
